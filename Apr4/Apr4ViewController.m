@@ -9,11 +9,10 @@
 #import "Apr4ViewController.h"
 #import "TemperatureCalculator.h"
 @interface Apr4ViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *textField;
 @end
 
 @implementation Apr4ViewController
-@synthesize textField;
+@synthesize tempInput;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -30,19 +29,19 @@
 }
 
 - (IBAction)convertPressed {
-    double temp = [textField.text doubleValue];
+    double temp = [tempInput.text doubleValue];
     double convTemp;
     if ( tempSelected == celsius )
     {
         TemperatureCalculator * tc = [[TemperatureCalculator alloc ] init];
-        convTemp = [tc convertToCelsius: temp ];
-        textField.text = [NSString stringWithFormat:@"%g", convTemp];
+        convTemp = [tc convertToFahrenheit: temp ];
+        tempInput.text = [NSString stringWithFormat:@"%g", convTemp];
     }
     else
     {
         TemperatureCalculator * tc = [[TemperatureCalculator alloc ] init];
-        convTemp = [tc convertToFahrenheit: temp ];
-        textField.text = [NSString stringWithFormat:@"%g", convTemp];
+        convTemp = [tc convertToCelsius: temp ];
+        tempInput.text = [NSString stringWithFormat:@"%g", convTemp];
     }
         
 }
