@@ -12,5 +12,6 @@ typedef  enum tempIndicator { celsius, fahrenheit } TempIndicator;
 {
     TempIndicator tempSelected;
 }
+@property (strong, nonatomic) IBOutlet UITextField *tempInput;
 
 @end
