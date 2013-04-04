@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
         <!--Apr4 View Controller-->
@@ -34,14 +34,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qDW-u4-ZQR">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="qXh-MY-Fw5"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j6q-t5-VdW">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="JOn-oR-or3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -68,30 +64,39 @@
                                     <action selector="convertPressed:" destination="2" eventType="touchDown" id="4LY-R2-O6h"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5k9-K0-mVI">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="45p-6g-jgs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="qDW-u4-ZQR" firstAttribute="trailing" secondItem="YMd-q3-eoG" secondAttribute="trailing" type="default" id="1At-dj-fJE"/>
-                            <constraint firstItem="j6q-t5-VdW" firstAttribute="leading" secondItem="qDW-u4-ZQR" secondAttribute="leading" type="default" id="1oU-cF-Pes"/>
                             <constraint firstItem="n4X-W4-dq3" firstAttribute="top" secondItem="3" secondAttribute="top" constant="173" id="2oJ-MP-qya"/>
                             <constraint firstItem="cqg-wZ-6zK" firstAttribute="centerX" secondItem="YMd-q3-eoG" secondAttribute="centerX" type="default" id="3an-r3-hML"/>
+                            <constraint firstItem="j6q-t5-VdW" firstAttribute="trailing" secondItem="YMd-q3-eoG" secondAttribute="trailing" type="default" id="64x-9L-bf9"/>
                             <constraint firstItem="n4X-W4-dq3" firstAttribute="leading" secondItem="8qK-Le-Fii" secondAttribute="leading" type="default" id="6iH-iz-68S"/>
+                            <constraint firstItem="5k9-K0-mVI" firstAttribute="top" secondItem="3" secondAttribute="top" constant="150" id="771-cT-VpQ"/>
                             <constraint firstAttribute="trailing" secondItem="roB-GX-Zsd" secondAttribute="trailing" constant="5" id="Inz-Sd-9ba"/>
-                            <constraint firstItem="qDW-u4-ZQR" firstAttribute="top" secondItem="8qK-Le-Fii" secondAttribute="top" type="default" id="LWs-tX-6b4"/>
-                            <constraint firstItem="j6q-t5-VdW" firstAttribute="trailing" secondItem="qDW-u4-ZQR" secondAttribute="trailing" type="default" id="ORe-Lw-YfW"/>
+                            <constraint firstItem="roB-GX-Zsd" firstAttribute="leading" secondItem="5k9-K0-mVI" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="QNQ-eG-anf"/>
                             <constraint firstItem="8qK-Le-Fii" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="10" id="WPq-nS-ou1"/>
                             <constraint firstItem="YMd-q3-eoG" firstAttribute="top" secondItem="3" secondAttribute="top" constant="66" id="XaA-la-OYq"/>
                             <constraint firstItem="8qK-Le-Fii" firstAttribute="top" secondItem="3" secondAttribute="top" constant="151" id="dJn-Lb-6zh"/>
-                            <constraint firstItem="roB-GX-Zsd" firstAttribute="top" secondItem="qDW-u4-ZQR" secondAttribute="top" type="default" id="jhG-WG-WLu"/>
                             <constraint firstItem="cqg-wZ-6zK" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="m8C-no-VFT"/>
                             <constraint firstItem="j6q-t5-VdW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="213" id="q6T-h0-eeC"/>
                             <constraint firstItem="YMd-q3-eoG" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="rva-PN-PHF"/>
+                            <constraint firstItem="5k9-K0-mVI" firstAttribute="top" secondItem="roB-GX-Zsd" secondAttribute="top" type="default" id="tVP-l1-HwT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tempInput" destination="5k9-K0-mVI" id="mZp-kv-6be"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51" y="144"/>
+            <point key="canvasLocation" x="300" y="94"/>
         </scene>
     </scenes>
     <classes>
@@ -99,7 +104,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/Apr4ViewController.h"/>
             <relationships>
                 <relationship kind="action" name="degreeSelector:" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="textField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="tempInput" candidateClass="UITextField"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
