@@ -7,11 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-typedef  enum tempIndicator { celsius, fahrenheit } TempIndicator;
+typedef  enum tempIndicator { eCelsius, eFahrenheit } enumTemperatureType;
 @interface Apr4ViewController : UIViewController
 {
-    TempIndicator tempSelected;
+    enumTemperatureType tempSelected;
 }
+<<<<<<< HEAD
 @property (strong, nonatomic) IBOutlet UITextField *tempInput;
+=======
+- (IBAction)temperatureConversionChanged:(UISegmentedControl *)sender;
+@property (weak, nonatomic) IBOutlet UITextField *tempInput;
+
+@property (weak, nonatomic) IBOutlet UITextField *convTemp;
+>>>>>>> Fixed handling of Segmented control
 
 @end
