@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--Apr4 View Controller-->
@@ -18,7 +18,7 @@
                                     <segment title="Fahrenheit"/>
                                 </segments>
                                 <connections>
-                                    <action selector="temperatureConversionChanged:" destination="2" eventType="valueChanged" id="IpO-aN-5am"/>
+                                    <action selector="temperatureConversionChanged:" destination="2" eventType="valueChanged" id="0Tj-IH-ZmC"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enter Temperature " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qK-Le-Fii">
@@ -27,12 +27,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j6q-t5-VdW">
-<<<<<<< HEAD
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="JOn-oR-or3"/>
-                                </constraints>
-=======
->>>>>>> Fixed handling of Segmented control
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -45,81 +39,39 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-<<<<<<< HEAD
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roB-GX-Zsd">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Go">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="convertPressed" destination="2" eventType="touchDown" id="hXU-DZ-XdE"/>
-                                    <action selector="convertPressed:" destination="2" eventType="touchDown" id="4LY-R2-O6h"/>
-                                </connections>
-                            </button>
-=======
->>>>>>> Fixed handling of Segmented control
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5k9-K0-mVI">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="45p-6g-jgs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-<<<<<<< HEAD
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="n4X-W4-dq3" firstAttribute="top" secondItem="3" secondAttribute="top" constant="173" id="2oJ-MP-qya"/>
-                            <constraint firstItem="cqg-wZ-6zK" firstAttribute="centerX" secondItem="YMd-q3-eoG" secondAttribute="centerX" type="default" id="3an-r3-hML"/>
-                            <constraint firstItem="j6q-t5-VdW" firstAttribute="trailing" secondItem="YMd-q3-eoG" secondAttribute="trailing" type="default" id="64x-9L-bf9"/>
-                            <constraint firstItem="n4X-W4-dq3" firstAttribute="leading" secondItem="8qK-Le-Fii" secondAttribute="leading" type="default" id="6iH-iz-68S"/>
-                            <constraint firstItem="5k9-K0-mVI" firstAttribute="top" secondItem="3" secondAttribute="top" constant="150" id="771-cT-VpQ"/>
-                            <constraint firstAttribute="trailing" secondItem="roB-GX-Zsd" secondAttribute="trailing" constant="5" id="Inz-Sd-9ba"/>
-                            <constraint firstItem="roB-GX-Zsd" firstAttribute="leading" secondItem="5k9-K0-mVI" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="QNQ-eG-anf"/>
-                            <constraint firstItem="8qK-Le-Fii" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="10" id="WPq-nS-ou1"/>
-                            <constraint firstItem="YMd-q3-eoG" firstAttribute="top" secondItem="3" secondAttribute="top" constant="66" id="XaA-la-OYq"/>
-                            <constraint firstItem="8qK-Le-Fii" firstAttribute="top" secondItem="3" secondAttribute="top" constant="151" id="dJn-Lb-6zh"/>
-                            <constraint firstItem="cqg-wZ-6zK" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="m8C-no-VFT"/>
-                            <constraint firstItem="j6q-t5-VdW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="213" id="q6T-h0-eeC"/>
-                            <constraint firstItem="YMd-q3-eoG" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="rva-PN-PHF"/>
-                            <constraint firstItem="5k9-K0-mVI" firstAttribute="top" secondItem="roB-GX-Zsd" secondAttribute="top" type="default" id="tVP-l1-HwT"/>
-                        </constraints>
-                    </view>
-                    <connections>
-=======
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpl-Fz-x7v">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMC-yN-yf8">
                                 <items>
-                                    <navigationItem title="Temperature Converter" id="OMm-9d-McN"/>
+                                    <navigationItem title="Temperature Converter" id="Zf8-xg-XhB"/>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="5k9-K0-mVI" firstAttribute="top" secondItem="3" secondAttribute="top" constant="138" id="5jN-UQ-fal"/>
+                            <constraint firstItem="5k9-K0-mVI" firstAttribute="trailing" secondItem="j6q-t5-VdW" secondAttribute="trailing" type="default" id="5eZ-WA-hXf"/>
                             <constraint firstItem="n4X-W4-dq3" firstAttribute="leading" secondItem="8qK-Le-Fii" secondAttribute="leading" type="default" id="6iH-iz-68S"/>
-                            <constraint firstItem="8qK-Le-Fii" firstAttribute="top" secondItem="3" secondAttribute="top" constant="140" id="97k-5L-JJs"/>
-                            <constraint firstItem="dpl-Fz-x7v" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="UZ0-Tb-sOz"/>
-                            <constraint firstItem="n4X-W4-dq3" firstAttribute="top" secondItem="3" secondAttribute="top" constant="162" id="W45-aJ-nyK"/>
+                            <constraint firstItem="5k9-K0-mVI" firstAttribute="top" secondItem="3" secondAttribute="top" constant="150" id="771-cT-VpQ"/>
+                            <constraint firstItem="eMC-yN-yf8" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Ahu-JR-6nz"/>
+                            <constraint firstAttribute="trailing" secondItem="5k9-K0-mVI" secondAttribute="trailing" constant="58" id="JBC-11-ggB"/>
+                            <constraint firstItem="eMC-yN-yf8" firstAttribute="centerX" secondItem="YMd-q3-eoG" secondAttribute="centerX" type="default" id="MO2-Bh-iX1"/>
+                            <constraint firstItem="eMC-yN-yf8" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="QHP-ln-aoR"/>
                             <constraint firstItem="8qK-Le-Fii" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="10" id="WPq-nS-ou1"/>
-                            <constraint firstItem="5k9-K0-mVI" firstAttribute="leading" secondItem="j6q-t5-VdW" secondAttribute="leading" type="default" id="eWk-39-fC0"/>
-                            <constraint firstItem="j6q-t5-VdW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="202" id="g4M-My-tuY"/>
-                            <constraint firstItem="YMd-q3-eoG" firstAttribute="centerX" secondItem="dpl-Fz-x7v" secondAttribute="centerX" type="default" id="koz-Ns-B2s"/>
-                            <constraint firstItem="5k9-K0-mVI" firstAttribute="trailing" secondItem="j6q-t5-VdW" secondAttribute="trailing" type="default" id="lJc-41-m3b"/>
-                            <constraint firstItem="dpl-Fz-x7v" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="oGl-iR-1sY"/>
-                            <constraint firstAttribute="trailing" secondItem="5k9-K0-mVI" secondAttribute="trailing" constant="58" id="sPw-aQ-7Fx"/>
-                            <constraint firstItem="dpl-Fz-x7v" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="vAQ-yc-tux"/>
-                            <constraint firstItem="YMd-q3-eoG" firstAttribute="top" secondItem="3" secondAttribute="top" constant="55" id="vRr-MD-bl4"/>
+                            <constraint firstItem="YMd-q3-eoG" firstAttribute="top" secondItem="3" secondAttribute="top" constant="66" id="XaA-la-OYq"/>
+                            <constraint firstItem="eMC-yN-yf8" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="bCv-qt-bKt"/>
+                            <constraint firstItem="8qK-Le-Fii" firstAttribute="top" secondItem="3" secondAttribute="top" constant="151" id="dJn-Lb-6zh"/>
+                            <constraint firstItem="j6q-t5-VdW" firstAttribute="leading" secondItem="5k9-K0-mVI" secondAttribute="leading" type="default" id="db8-Pj-QkD"/>
+                            <constraint firstItem="j6q-t5-VdW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="200" id="nXv-Fl-odg"/>
+                            <constraint firstItem="n4X-W4-dq3" firstAttribute="top" secondItem="3" secondAttribute="top" constant="168" id="xUq-vW-pBg"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="convTemp" destination="j6q-t5-VdW" id="06x-zY-Ti0"/>
->>>>>>> Fixed handling of Segmented control
+                        <outlet property="convTemp" destination="j6q-t5-VdW" id="JdK-9r-qvG"/>
                         <outlet property="tempInput" destination="5k9-K0-mVI" id="mZp-kv-6be"/>
                     </connections>
                 </viewController>
@@ -132,12 +84,8 @@
         <class className="Apr4ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/Apr4ViewController.h"/>
             <relationships>
-<<<<<<< HEAD
-                <relationship kind="action" name="degreeSelector:" candidateClass="UISegmentedControl"/>
-=======
                 <relationship kind="action" name="temperatureConversionChanged:" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="convTemp" candidateClass="UITextField"/>
->>>>>>> Fixed handling of Segmented control
                 <relationship kind="outlet" name="tempInput" candidateClass="UITextField"/>
             </relationships>
         </class>

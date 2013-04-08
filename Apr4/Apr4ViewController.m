@@ -10,16 +10,13 @@
 #import "TemperatureCalculator.h"
 
 @interface Apr4ViewController ()
-<<<<<<< HEAD
-=======
+
 @property  ( nonatomic, strong) TemperatureCalculator * fcCalculator;
->>>>>>> Fixed handling of Segmented control
+
 @end
 
 @implementation Apr4ViewController
 @synthesize tempInput;
-<<<<<<< HEAD
-=======
 @synthesize convTemp;
 
 - ( TemperatureCalculator * ) fcCalculator
@@ -27,7 +24,8 @@
     if ( !_fcCalculator ) _fcCalculator = [[TemperatureCalculator alloc ] init];
     return _fcCalculator;
 }
->>>>>>> Fixed handling of Segmented control
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -65,22 +63,7 @@
     tempInput.text = @"";
 }
 
-<<<<<<< HEAD
-- (IBAction)convertPressed {
-    double temp = [tempInput.text doubleValue];
-    double convTemp;
-    if ( tempSelected == celsius )
-    {
-        TemperatureCalculator * tc = [[TemperatureCalculator alloc ] init];
-        convTemp = [tc convertToFahrenheit: temp ];
-        tempInput.text = [NSString stringWithFormat:@"%g", convTemp];
-    }
-    else
-    {
-        TemperatureCalculator * tc = [[TemperatureCalculator alloc ] init];
-        convTemp = [tc convertToCelsius: temp ];
-        tempInput.text = [NSString stringWithFormat:@"%g", convTemp];
-=======
+
 -(void)doneWithNumberPad{
     //NSString *numberFromTheKeyboard = tempInput.text;
     double temp = [tempInput.text doubleValue];
@@ -99,7 +82,6 @@
         newTemp = [self.fcCalculator convertToCelsius: temp ];
         disp = [NSString stringWithFormat:@"%g", newTemp];
         self.convTemp.text = disp;
->>>>>>> Fixed handling of Segmented control
     }
     [tempInput resignFirstResponder];
 }

@@ -12,13 +12,11 @@ typedef  enum tempIndicator { eCelsius, eFahrenheit } enumTemperatureType;
 {
     enumTemperatureType tempSelected;
 }
-<<<<<<< HEAD
-@property (strong, nonatomic) IBOutlet UITextField *tempInput;
-=======
+
+
 - (IBAction)temperatureConversionChanged:(UISegmentedControl *)sender;
 @property (weak, nonatomic) IBOutlet UITextField *tempInput;
-
 @property (weak, nonatomic) IBOutlet UITextField *convTemp;
->>>>>>> Fixed handling of Segmented control
+
 
 @end
