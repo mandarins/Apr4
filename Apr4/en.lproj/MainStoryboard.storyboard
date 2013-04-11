@@ -1,15 +1,68 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="QGT-yL-3Ea">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Apr4 View Controller-->
+        <!--Fx View Controller - Item 2-->
+        <scene sceneID="fM3-WL-20L">
+            <objects>
+                <viewController id="9xO-IL-mAL" customClass="FxViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wkp-mn-OTa">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7KM-2I-Agb">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ssss:" destination="9xO-IL-mAL" eventType="touchUpInside" id="I5N-aZ-0rj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7KM-2I-Agb" secondAttribute="bottom" constant="152" id="wRI-TK-73q"/>
+                            <constraint firstItem="7KM-2I-Agb" firstAttribute="leading" secondItem="Wkp-mn-OTa" secondAttribute="leading" constant="134" id="xnB-22-bZX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Y2F-M9-enR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pFO-hJ-gcW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22" y="358"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wV9-8x-cD3">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="QGT-yL-3Ea" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="63d-ZM-Hej">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="viewControllers" id="8Tn-sV-LI4"/>
+                        <segue destination="9xO-IL-mAL" kind="relationship" relationship="viewControllers" id="1kj-W9-E4w"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rqg-0e-daI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-604" y="-133"/>
+        </scene>
+        <!--Apr4 View Controller - C-F-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="Apr4ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YMd-q3-eoG">
@@ -44,32 +97,25 @@
                                     <constraint firstAttribute="width" constant="97" id="45p-6g-jgs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                             </textField>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMC-yN-yf8">
-                                <items>
-                                    <navigationItem title="Temperature Converter" id="Zf8-xg-XhB"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="YMd-q3-eoG" firstAttribute="top" secondItem="3" secondAttribute="top" constant="31" id="1p0-2J-MUi"/>
                             <constraint firstItem="5k9-K0-mVI" firstAttribute="trailing" secondItem="j6q-t5-VdW" secondAttribute="trailing" type="default" id="5eZ-WA-hXf"/>
                             <constraint firstItem="n4X-W4-dq3" firstAttribute="leading" secondItem="8qK-Le-Fii" secondAttribute="leading" type="default" id="6iH-iz-68S"/>
-                            <constraint firstItem="5k9-K0-mVI" firstAttribute="top" secondItem="3" secondAttribute="top" constant="150" id="771-cT-VpQ"/>
-                            <constraint firstItem="eMC-yN-yf8" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Ahu-JR-6nz"/>
-                            <constraint firstAttribute="trailing" secondItem="5k9-K0-mVI" secondAttribute="trailing" constant="58" id="JBC-11-ggB"/>
-                            <constraint firstItem="eMC-yN-yf8" firstAttribute="centerX" secondItem="YMd-q3-eoG" secondAttribute="centerX" type="default" id="MO2-Bh-iX1"/>
-                            <constraint firstItem="eMC-yN-yf8" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="QHP-ln-aoR"/>
-                            <constraint firstItem="8qK-Le-Fii" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="10" id="WPq-nS-ou1"/>
-                            <constraint firstItem="YMd-q3-eoG" firstAttribute="top" secondItem="3" secondAttribute="top" constant="66" id="XaA-la-OYq"/>
-                            <constraint firstItem="eMC-yN-yf8" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="bCv-qt-bKt"/>
-                            <constraint firstItem="8qK-Le-Fii" firstAttribute="top" secondItem="3" secondAttribute="top" constant="151" id="dJn-Lb-6zh"/>
+                            <constraint firstItem="8qK-Le-Fii" firstAttribute="top" secondItem="3" secondAttribute="top" constant="116" id="8H7-Jb-qHq"/>
+                            <constraint firstItem="YMd-q3-eoG" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="57" id="9Jk-oS-oWi"/>
+                            <constraint firstItem="j6q-t5-VdW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="165" id="AAo-Ou-VHo"/>
+                            <constraint firstItem="5k9-K0-mVI" firstAttribute="top" secondItem="3" secondAttribute="top" constant="115" id="Lw9-Da-7Fn"/>
                             <constraint firstItem="j6q-t5-VdW" firstAttribute="leading" secondItem="5k9-K0-mVI" secondAttribute="leading" type="default" id="db8-Pj-QkD"/>
-                            <constraint firstItem="j6q-t5-VdW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="200" id="nXv-Fl-odg"/>
-                            <constraint firstItem="n4X-W4-dq3" firstAttribute="top" secondItem="3" secondAttribute="top" constant="168" id="xUq-vW-pBg"/>
+                            <constraint firstItem="n4X-W4-dq3" firstAttribute="top" secondItem="3" secondAttribute="top" constant="133" id="tne-dw-6To"/>
+                            <constraint firstAttribute="trailing" secondItem="5k9-K0-mVI" secondAttribute="trailing" constant="54" id="uEG-J5-nPZ"/>
+                            <constraint firstItem="8qK-Le-Fii" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="14" id="vE2-ya-cf7"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="C-F" image="therm.png" id="XTL-1p-miK" userLabel="Temperature" colorLabel="IBBuiltInLabel-Blue"/>
                     <connections>
                         <outlet property="convTemp" destination="j6q-t5-VdW" id="JdK-9r-qvG"/>
                         <outlet property="tempInput" destination="5k9-K0-mVI" id="mZp-kv-6be"/>
@@ -77,9 +123,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="300" y="94"/>
+            <point key="canvasLocation" x="22" y="-344"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="therm.png" width="15" height="15"/>
+    </resources>
     <classes>
         <class className="Apr4ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/Apr4ViewController.h"/>
@@ -89,6 +138,9 @@
                 <relationship kind="outlet" name="tempInput" candidateClass="UITextField"/>
             </relationships>
         </class>
+        <class className="FxViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FxViewController.h"/>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
@@ -96,6 +148,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

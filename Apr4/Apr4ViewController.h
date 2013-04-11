@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 typedef  enum tempIndicator { eCelsius, eFahrenheit } enumTemperatureType;
-@interface Apr4ViewController : UIViewController
+@interface Apr4ViewController : UIViewController <UITextFieldDelegate>
 {
     enumTemperatureType tempSelected;
 }

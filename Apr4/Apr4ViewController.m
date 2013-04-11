@@ -16,7 +16,7 @@
 @end
 
 @implementation Apr4ViewController
-@synthesize tempInput;
+//@synthesize tempInput;
 @synthesize convTemp;
 
 - ( TemperatureCalculator * ) fcCalculator
@@ -24,7 +24,12 @@
     if ( !_fcCalculator ) _fcCalculator = [[TemperatureCalculator alloc ] init];
     return _fcCalculator;
 }
-
+- (BOOL) textFieldShouldReturn:(UITextField *)textField
+{
+    [self doneWithNumberPad];
+    [textField resignFirstResponder];
+    return YES;
+}
 
 - (void)viewDidLoad
 {
@@ -42,7 +47,9 @@
                            [[UIBarButtonItem alloc]initWithTitle:@"Apply" style:UIBarButtonItemStyleDone target:self action:@selector(doneWithNumberPad)],
                            nil];
     [numberToolbar sizeToFit];
-    tempInput.inputAccessoryView = numberToolbar;
+    
+    self.tempInput.delegate = self;
+    self.tempInput.inputAccessoryView = numberToolbar;
 }
 
 - (void)didReceiveMemoryWarning
@@ -59,14 +66,14 @@
 }
 
 -(void)cancelNumberPad{
-    [tempInput resignFirstResponder];
-    tempInput.text = @"";
+    [self.tempInput resignFirstResponder];
+    self.tempInput.text = @"";
 }
 
 
 -(void)doneWithNumberPad{
     //NSString *numberFromTheKeyboard = tempInput.text;
-    double temp = [tempInput.text doubleValue];
+    double temp = [self.tempInput.text doubleValue];
     double newTemp;
     NSMutableString * disp = [[NSMutableString alloc] init];
         
@@ -83,6 +90,6 @@
         disp = [NSString stringWithFormat:@"%g", newTemp];
         self.convTemp.text = disp;
     }
-    [tempInput resignFirstResponder];
+    [self.tempInput resignFirstResponder];
 }
 @end

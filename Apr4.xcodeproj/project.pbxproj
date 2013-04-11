@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E308397317150F2000C222B7 /* FxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E308397217150F2000C222B7 /* FxViewController.m */; };
+		E339D6661713C3EB00D83318 /* ExchangeRates.m in Sources */ = {isa = PBXBuildFile; fileRef = E339D6651713C3EB00D83318 /* ExchangeRates.m */; };
+		E3C861E41714EC850063ADE9 /* therm.png in Resources */ = {isa = PBXBuildFile; fileRef = E3C861E31714EC850063ADE9 /* therm.png */; };
 		E3FC4E30170D3CEF007D47C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3FC4E2F170D3CEF007D47C2 /* UIKit.framework */; };
 		E3FC4E32170D3CEF007D47C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3FC4E31170D3CEF007D47C2 /* Foundation.framework */; };
 		E3FC4E34170D3CEF007D47C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3FC4E33170D3CEF007D47C2 /* CoreGraphics.framework */; };
@@ -22,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E308397117150F2000C222B7 /* FxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxViewController.h; sourceTree = "<group>"; };
+		E308397217150F2000C222B7 /* FxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxViewController.m; sourceTree = "<group>"; };
+		E339D6641713C3EB00D83318 /* ExchangeRates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExchangeRates.h; sourceTree = "<group>"; };
+		E339D6651713C3EB00D83318 /* ExchangeRates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExchangeRates.m; sourceTree = "<group>"; };
+		E3C861E31714EC850063ADE9 /* therm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = therm.png; sourceTree = "<group>"; };
 		E3FC4E2C170D3CEF007D47C2 /* Apr4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apr4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FC4E2F170D3CEF007D47C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E3FC4E31170D3CEF007D47C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -86,6 +94,8 @@
 		E3FC4E35170D3CEF007D47C2 /* Apr4 */ = {
 			isa = PBXGroup;
 			children = (
+				E308397117150F2000C222B7 /* FxViewController.h */,
+				E308397217150F2000C222B7 /* FxViewController.m */,
 				E3FC4E3E170D3CEF007D47C2 /* Apr4AppDelegate.h */,
 				E3FC4E3F170D3CEF007D47C2 /* Apr4AppDelegate.m */,
 				E3FC4E47170D3CEF007D47C2 /* MainStoryboard.storyboard */,
@@ -94,6 +104,8 @@
 				E3FC4E36170D3CEF007D47C2 /* Supporting Files */,
 				E3FC4E52170D3D1D007D47C2 /* TemperatureCalculator.h */,
 				E3FC4E53170D3D1D007D47C2 /* TemperatureCalculator.m */,
+				E339D6641713C3EB00D83318 /* ExchangeRates.h */,
+				E339D6651713C3EB00D83318 /* ExchangeRates.m */,
 			);
 			path = Apr4;
 			sourceTree = "<group>";
@@ -101,6 +113,7 @@
 		E3FC4E36170D3CEF007D47C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E3C861E31714EC850063ADE9 /* therm.png */,
 				E3FC4E37170D3CEF007D47C2 /* Apr4-Info.plist */,
 				E3FC4E38170D3CEF007D47C2 /* InfoPlist.strings */,
 				E3FC4E3B170D3CEF007D47C2 /* main.m */,
@@ -169,6 +182,7 @@
 				E3FC4E44170D3CEF007D47C2 /* Default@2x.png in Resources */,
 				E3FC4E46170D3CEF007D47C2 /* Default-568h@2x.png in Resources */,
 				E3FC4E49170D3CEF007D47C2 /* MainStoryboard.storyboard in Resources */,
+				E3C861E41714EC850063ADE9 /* therm.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +197,8 @@
 				E3FC4E40170D3CEF007D47C2 /* Apr4AppDelegate.m in Sources */,
 				E3FC4E4C170D3CEF007D47C2 /* Apr4ViewController.m in Sources */,
 				E3FC4E54170D3D1D007D47C2 /* TemperatureCalculator.m in Sources */,
+				E339D6661713C3EB00D83318 /* ExchangeRates.m in Sources */,
+				E308397317150F2000C222B7 /* FxViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +323,7 @@
 				E3FC4E51170D3CEF007D47C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
