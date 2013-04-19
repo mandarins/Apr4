@@ -7,10 +7,25 @@
 //
 
 #import <Foundation/Foundation.h>
+@class ExchangeRates;
+
+@protocol ExchangeRateDelegate <NSObject>
+@optional
+- (double)didReceiveRates:(ExchangeRates *) exchangeRates;
+@end
 
 @interface ExchangeRates : NSObject
+
 - ( void) requestExhangeRate:(NSString *)from :(NSString *)to;
 
 @property double exchangeRate;
 @property (nonatomic, strong) NSMutableData *responseData;
+
+// define delegate property
+@property (nonatomic, assign) id  delegate;
+
+// define public functions
+-(double)performDidReceiveRates;
 @end
+
+

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E308397317150F2000C222B7 /* FxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E308397217150F2000C222B7 /* FxViewController.m */; };
+		E3341C2F17191C24008045E4 /* FXView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3341C2E17191C24008045E4 /* FXView.m */; };
 		E339D6661713C3EB00D83318 /* ExchangeRates.m in Sources */ = {isa = PBXBuildFile; fileRef = E339D6651713C3EB00D83318 /* ExchangeRates.m */; };
 		E3C861E41714EC850063ADE9 /* therm.png in Resources */ = {isa = PBXBuildFile; fileRef = E3C861E31714EC850063ADE9 /* therm.png */; };
 		E3FC4E30170D3CEF007D47C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3FC4E2F170D3CEF007D47C2 /* UIKit.framework */; };
@@ -27,6 +28,8 @@
 /* Begin PBXFileReference section */
 		E308397117150F2000C222B7 /* FxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxViewController.h; sourceTree = "<group>"; };
 		E308397217150F2000C222B7 /* FxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxViewController.m; sourceTree = "<group>"; };
+		E3341C2D17191C24008045E4 /* FXView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FXView.h; path = Apr4/FXView.h; sourceTree = "<group>"; };
+		E3341C2E17191C24008045E4 /* FXView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FXView.m; path = Apr4/FXView.m; sourceTree = "<group>"; };
 		E339D6641713C3EB00D83318 /* ExchangeRates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExchangeRates.h; sourceTree = "<group>"; };
 		E339D6651713C3EB00D83318 /* ExchangeRates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExchangeRates.m; sourceTree = "<group>"; };
 		E3C861E31714EC850063ADE9 /* therm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = therm.png; sourceTree = "<group>"; };
@@ -94,6 +97,8 @@
 		E3FC4E35170D3CEF007D47C2 /* Apr4 */ = {
 			isa = PBXGroup;
 			children = (
+				E3341C2D17191C24008045E4 /* FXView.h */,
+				E3341C2E17191C24008045E4 /* FXView.m */,
 				E308397117150F2000C222B7 /* FxViewController.h */,
 				E308397217150F2000C222B7 /* FxViewController.m */,
 				E3FC4E3E170D3CEF007D47C2 /* Apr4AppDelegate.h */,
@@ -199,6 +204,7 @@
 				E3FC4E54170D3D1D007D47C2 /* TemperatureCalculator.m in Sources */,
 				E339D6661713C3EB00D83318 /* ExchangeRates.m in Sources */,
 				E308397317150F2000C222B7 /* FxViewController.m in Sources */,
+				E3341C2F17191C24008045E4 /* FXView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

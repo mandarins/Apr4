@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Apr4/ExchangeRates.m"
-         timestampString = "387248214.528206"
+         timestampString = "387607737.706485"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "15"
-         endingLineNumber = "15"
+         startingLineNumber = "18"
+         endingLineNumber = "18"
          landmarkName = "-requestExhangeRate::"
          landmarkType = "5">
       </FileBreakpoint>
@@ -47,11 +47,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Apr4/ExchangeRates.m"
-         timestampString = "387249150.982848"
+         timestampString = "387607737.706485"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "38"
-         endingLineNumber = "38"
+         startingLineNumber = "44"
+         endingLineNumber = "44"
          landmarkName = "-connectionDidFinishLoading:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -60,11 +60,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Apr4/ExchangeRates.m"
-         timestampString = "387249155.943193"
+         timestampString = "387607737.706485"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "29"
-         endingLineNumber = "29"
+         startingLineNumber = "35"
+         endingLineNumber = "35"
          landmarkName = "-connection:didReceiveData:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -72,27 +72,27 @@
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "Apr4/ExchangeRates.m"
-         timestampString = "387249209.36239"
+         filePath = "FXView.m"
+         timestampString = "387433499.507168"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "58"
-         endingLineNumber = "58"
-         landmarkName = "-connectionDidFinishLoading:"
+         startingLineNumber = "30"
+         endingLineNumber = "30"
+         landmarkName = "-viewController"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "Apr4/FxViewController.m"
-         timestampString = "387256306.602711"
+         filePath = "Apr4/ExchangeRates.h"
+         timestampString = "387607010.515698"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "39"
-         endingLineNumber = "39"
-         landmarkName = "-ssss:"
-         landmarkType = "5">
+         startingLineNumber = "29"
+         endingLineNumber = "29"
+         landmarkName = "@interface ExchangeRates"
+         landmarkType = "2">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>
